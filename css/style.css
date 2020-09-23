@@ -15,14 +15,16 @@ fieldset {
 	border: none;
 }
 
-fieldset > div {
-	margin-top: 1em;
+label {
+	font-size: 0.9em;
 }
 
 .contact input,
 select {
 	display: block;
 	width: 100%;
+	height: 44px;
+	padding: 0 1em;
 }
 
 /* ---- Shared Styles ---- */
@@ -66,4 +68,19 @@ select {
 .section-heading {
 	font-size: 1.25em;
 	font-weight: 500;
+	margin-bottom: 1rem;
+	padding: 0;
+}
+
+.input-item:nth-of-type(n + 2) {
+	margin-top: 0.75em;
+}
+
+.input-item input {
+	margin-top: 0.75rem;
+}
+
+::placeholder {
+	text-align: right;
+	font-style: italic;
 }
