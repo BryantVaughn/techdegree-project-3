@@ -1,0 +1,65 @@
+/* ---- Base Styles ---- */
+* {
+	font-family: 'Roboto', Helvetica, Arial, sans-serif;
+	box-sizing: border-box;
+}
+
+body,
+h1,
+fieldset {
+	margin: 0;
+	padding: 0;
+}
+
+fieldset {
+	border: none;
+}
+
+.contact input,
+select {
+	display: block;
+	width: 100%;
+}
+
+/* ---- Shared Styles ---- */
+.header-content,
+.form-content {
+	width: 90%;
+	margin: auto;
+}
+
+.header-content {
+	border-bottom: 2px solid #000;
+	margin-bottom: 2px;
+}
+
+.form-section {
+	border-top: 1px solid #000;
+	padding-top: 1em;
+}
+
+.title,
+.btn {
+	color: #fff;
+}
+
+/* ---- Class Styles ---- */
+.main-header {
+	text-align: center;
+}
+
+.page-title {
+	width: 100%;
+	background-color: #273849;
+	padding: 1em 0;
+}
+
+.title {
+	text-transform: uppercase;
+	font-size: 1.5em;
+}
+
+.section-heading {
+	font-size: 1.25em;
+	font-weight: 500;
+}
