@@ -42,8 +42,7 @@ select {
 
 /* ---- Shared Styles ---- */
 .header-content,
-.form-content,
-.main-footer {
+.form-content {
 	width: 90%;
 	margin: auto;
 }
@@ -56,6 +55,7 @@ span,
 }
 
 .title,
+.main-footer span,
 .btn {
 	color: #fff;
 }
@@ -66,16 +66,14 @@ span,
 	font-weight: 500;
 }
 
-.input-item input,
-.input-item select,
-.text {
+.focus {
 	background-color: #edeef2;
 	padding: 1em;
+	outline-color: transparent;
+	transition: outline-color 0.3s ease-out;
 }
 
-.input-item input,
-.input-item select,
-.text,
+.focus,
 .btn {
 	border: none;
 	border-radius: 5px;
@@ -93,9 +91,7 @@ span,
 	margin-bottom: 0.5em;
 }
 
-.input-item input:focus,
-.input-item select:focus,
-.text:focus {
+.focus:focus {
 	outline-color: #273849;
 }
 
@@ -104,9 +100,13 @@ span,
 	text-align: center;
 }
 
+.page-title,
+.main-footer {
+	background-color: #273849;
+}
+
 .page-title {
 	width: 100%;
-	background-color: #273849;
 	padding: 1em 0;
 	margin-bottom: 1.5rem;
 }
@@ -158,6 +158,7 @@ span,
 .text {
 	height: 6rem;
 	margin-top: 0.5rem;
+	resize: none;
 }
 
 .btn {
@@ -168,11 +169,15 @@ span,
 }
 
 .main-footer {
-	text-align: center;
-	padding-bottom: 4rem;
+	width: 100%;
+	height: 8rem;
+	padding-top: 2rem;
+	display: flex;
+	justify-content: center;
 }
 
-::placeholder {
+input[type='text']::placeholder,
+input[type='email']::placeholder {
 	text-align: right;
 	font-style: italic;
 	padding-right: 0.25em;
@@ -182,8 +187,7 @@ span,
 
 @media (min-width: 768px) {
 	.header-content,
-	.form-content,
-	.main-footer {
+	.form-content {
 		max-width: 600px;
 	}
 

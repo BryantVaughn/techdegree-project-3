@@ -33,6 +33,7 @@
 								id="name"
 								name="user-name"
 								placeholder="Required"
+								class="focus"
 								required
 							/>
 						</div>
@@ -43,24 +44,30 @@
 								id="email"
 								name="user-email"
 								placeholder="Required"
+								class="focus"
 								required
 							/>
 						</div>
 						<div class="input-item">
 							<label for="phone">Phone Number</label>
-							<input type="tel" id="phone" name="user-phone" />
+							<input type="tel" id="phone" name="user-phone" class="focus" />
 						</div>
 						<div class="input-item">
 							<label for="address">Street Address</label>
-							<input type="text" id="address" name="user-address" />
+							<input
+								type="text"
+								id="address"
+								name="user-address"
+								class="focus"
+							/>
 						</div>
 						<div class="input-item">
 							<label for="city">City</label>
-							<input type="text" id="city" name="user-city" />
+							<input type="text" id="city" name="user-city" class="focus" />
 						</div>
 						<div class="input-item">
 							<label for="state">State</label>
-							<select id="state" name="user-state">
+							<select id="state" name="user-state" class="focus">
 								<option selected disabled hidden>Choose State</option>
 								<option value="AL">Alabama</option>
 								<option value="AK">Alaska</option>
@@ -117,7 +124,7 @@
 						</div>
 						<div class="input-item zip">
 							<label for="zip">Zip Code</label>
-							<input type="text" id="zip" name="user-zip" />
+							<input type="text" id="zip" name="user-zip" class="focus" />
 						</div>
 					</fieldset>
 				</div>
@@ -174,9 +181,10 @@
 						</div>
 						<label for="topics">Other topics you'd like to hear about</label>
 						<textarea
-							class="text"
+							class="text focus"
 							id="topics"
 							name="requested-topics"
+							placeholder="List other topics here"
 						></textarea>
 					</fieldset>
 				</div>
