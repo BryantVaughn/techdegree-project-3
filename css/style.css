@@ -145,6 +145,11 @@ span,
 	margin-top: 0.5rem;
 }
 
+.zip {
+	width: 50%;
+	margin-left: 0;
+}
+
 .group {
 	padding-top: 0.5rem;
 	padding-bottom: 1rem;
@@ -186,10 +191,6 @@ span,
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-	}
-
-	.zip {
-		flex-basis: 25%;
 	}
 
 	.contact input,
