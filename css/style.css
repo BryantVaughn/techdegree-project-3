@@ -42,7 +42,8 @@ select {
 
 /* ---- Shared Styles ---- */
 .header-content,
-.form-content {
+.form-content,
+.main-footer {
 	width: 90%;
 	margin: auto;
 }
@@ -69,7 +70,7 @@ span,
 .input-item select,
 .text {
 	background-color: #edeef2;
-	padding: 0.5em;
+	padding: 1em;
 }
 
 .input-item input,
@@ -84,6 +85,7 @@ span,
 [type='checkbox'],
 [type='radio'] {
 	transform: scale(0.9);
+	margin-right: 0.75rem;
 }
 
 .check-val,
@@ -169,4 +171,33 @@ span,
 	text-align: right;
 	font-style: italic;
 	padding-right: 0.25em;
+}
+
+/* ---- Media Query ---- */
+
+@media (min-width: 768px) {
+	.header-content,
+	.form-content,
+	.main-footer {
+		max-width: 600px;
+	}
+
+	.input-item {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.zip {
+		flex-basis: 25%;
+	}
+
+	.contact input,
+	.contact select {
+		flex-basis: 75%;
+	}
+
+	.input-item:first-of-type input {
+		margin-top: 0;
+	}
 }
