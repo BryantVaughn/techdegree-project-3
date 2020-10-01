@@ -38,7 +38,6 @@ select,
 .contact input,
 select {
 	display: block;
-	padding: 0 1em;
 }
 
 /* ---- Shared Styles ---- */
@@ -70,6 +69,7 @@ span,
 .input-item select,
 .text {
 	background-color: #edeef2;
+	padding: 0.5em;
 }
 
 .input-item input,
@@ -79,6 +79,22 @@ span,
 	border: none;
 	border-radius: 5px;
 	width: 100%;
+}
+
+[type='checkbox'],
+[type='radio'] {
+	transform: scale(0.9);
+}
+
+.check-val,
+.radio-val {
+	margin-bottom: 0.5em;
+}
+
+.input-item input:focus,
+.input-item select:focus,
+.text:focus {
+	outline-color: #273849;
 }
 
 /* ---- Class Styles ---- */
@@ -125,6 +141,11 @@ span,
 .input-item input,
 .input-item select {
 	margin-top: 0.5rem;
+}
+
+.group {
+	padding-top: 0.5rem;
+	padding-bottom: 1rem;
 }
 
 .text {
