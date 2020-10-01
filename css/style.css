@@ -70,7 +70,6 @@ span,
 	background-color: #edeef2;
 	padding: 1em;
 	outline-color: transparent;
-	transition: outline-color 0.3s ease-out;
 }
 
 .focus,
@@ -91,8 +90,12 @@ span,
 	margin-bottom: 0.5em;
 }
 
-.focus:focus {
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
 	outline-color: #273849;
+	transition: outline-color 0.3s ease-out;
 }
 
 /* ---- Class Styles ---- */
