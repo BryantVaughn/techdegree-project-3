@@ -189,13 +189,24 @@ span,
 
 	.input-item {
 		display: flex;
-		justify-content: space-between;
 		align-items: center;
+	}
+
+	.contact label {
+		flex-basis: 25%;
 	}
 
 	.contact input,
 	.contact select {
 		flex-basis: 75%;
+	}
+
+	.zip {
+		width: 100%;
+	}
+
+	.zip input {
+		max-width: 25%;
 	}
 
 	.input-item:first-of-type input {
