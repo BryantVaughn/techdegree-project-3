@@ -11,9 +11,13 @@ fieldset {
 	padding: 0;
 }
 
+p,
+span {
+	font-size: 0.9em;
+}
+
 p {
 	margin: 0.75rem 0.3rem 0;
-	font-size: 0.9em;
 }
 
 fieldset {
@@ -26,23 +30,29 @@ label {
 }
 
 .contact input,
+select,
+.btn {
+	height: 44px;
+}
+
+.contact input,
 select {
 	display: block;
-	width: 100%;
-	height: 44px;
 	padding: 0 1em;
 }
 
 /* ---- Shared Styles ---- */
 .header-content,
 .form-content {
-	width: 95%;
+	width: 90%;
 	margin: auto;
 }
 
 p,
-.input-item select {
-	color: #909090;
+span,
+.input-item select,
+::placeholder {
+	color: #aaa;
 }
 
 .title,
@@ -54,6 +64,21 @@ p,
 .section-heading {
 	font-size: 1.25em;
 	font-weight: 500;
+}
+
+.input-item input,
+.input-item select,
+.text {
+	background-color: #edeef2;
+}
+
+.input-item input,
+.input-item select,
+.text,
+.btn {
+	border: none;
+	border-radius: 5px;
+	width: 100%;
 }
 
 /* ---- Class Styles ---- */
@@ -81,7 +106,7 @@ p,
 
 .form-section {
 	border-top: 1px solid #000;
-	padding-top: 1.5rem;
+	padding: 1.5rem 0;
 }
 
 .main-heading {
@@ -99,10 +124,18 @@ p,
 
 .input-item input,
 .input-item select {
-	border: none;
-	border-radius: 5px;
 	margin-top: 0.5rem;
-	background-color: #edeef2;
+}
+
+.btn {
+	background-color: #28c9b9;
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
+.main-footer {
+	text-align: center;
+	padding-bottom: 4rem;
 }
 
 ::placeholder {
