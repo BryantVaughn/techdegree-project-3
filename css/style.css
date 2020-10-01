@@ -32,7 +32,7 @@ label {
 .contact input,
 select,
 .btn {
-	height: 44px;
+	height: 3rem;
 }
 
 .contact input,
@@ -125,6 +125,10 @@ span,
 .input-item input,
 .input-item select {
 	margin-top: 0.5rem;
+}
+
+.text {
+	height: 6rem;
 }
 
 .btn {
