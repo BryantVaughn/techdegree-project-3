@@ -176,8 +176,7 @@ span,
 	justify-content: center;
 }
 
-input[type='text']::placeholder,
-input[type='email']::placeholder {
+.right::placeholder {
 	text-align: right;
 	font-style: italic;
 	padding-right: 0.25em;
