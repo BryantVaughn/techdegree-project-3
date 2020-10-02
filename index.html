@@ -129,66 +129,68 @@
 					</fieldset>
 				</div>
 
-				<div class="form-section">
-					<fieldset class="newsletter">
-						<legend class="section-heading">Newsletter</legend>
-						<label>Select the newsletters you would like to receive</label
-						><br />
-						<div class="group">
-							<div class="check-val">
-								<input
-									type="checkbox"
-									id="html-news"
-									value="html-news"
-									name="news"
-								/><label for="html-news">HTML News</label><br />
+				<div class="secondary">
+					<div class="form-section">
+						<fieldset class="newsletter">
+							<legend class="section-heading">Newsletter</legend>
+							<label>Select the newsletters you would like to receive</label
+							><br />
+							<div class="group">
+								<div class="check-val">
+									<input
+										type="checkbox"
+										id="html-news"
+										value="html-news"
+										name="news"
+									/><label for="html-news">HTML News</label><br />
+								</div>
+								<div class="check-val">
+									<input
+										type="checkbox"
+										id="css-news"
+										value="css-news"
+										name="news"
+									/><label for="css-news">CSS News</label><br />
+								</div>
+								<div class="check-val">
+									<input
+										type="checkbox"
+										id="js-news"
+										value="js-news"
+										name="news"
+									/><label for="js-news">Javascript News</label><br />
+								</div>
 							</div>
-							<div class="check-val">
-								<input
-									type="checkbox"
-									id="css-news"
-									value="css-news"
-									name="news"
-								/><label for="css-news">CSS News</label><br />
+							<label>Newsletter format</label><br />
+							<div class="group">
+								<div class="radio-val">
+									<input
+										type="radio"
+										id="html"
+										value="html"
+										name="format"
+									/><label for="html">HTML</label><br />
+								</div>
+								<div class="radio-val">
+									<input
+										type="radio"
+										id="plain-text"
+										value="plain-text"
+										name="format"
+									/><label for="plain-text">Plain text</label><br />
+								</div>
 							</div>
-							<div class="check-val">
-								<input
-									type="checkbox"
-									id="js-news"
-									value="js-news"
-									name="news"
-								/><label for="js-news">Javascript News</label><br />
-							</div>
-						</div>
-						<label>Newsletter format</label><br />
-						<div class="group">
-							<div class="radio-val">
-								<input
-									type="radio"
-									id="html"
-									value="html"
-									name="format"
-								/><label for="html">HTML</label><br />
-							</div>
-							<div class="radio-val">
-								<input
-									type="radio"
-									id="plain-text"
-									value="plain-text"
-									name="format"
-								/><label for="plain-text">Plain text</label><br />
-							</div>
-						</div>
-						<label for="topics">Other topics you'd like to hear about</label>
-						<textarea
-							class="text focus"
-							id="topics"
-							name="requested-topics"
-							placeholder="List other topics here"
-						></textarea>
-					</fieldset>
+							<label for="topics">Other topics you'd like to hear about</label>
+							<textarea
+								class="text focus"
+								id="topics"
+								name="requested-topics"
+								placeholder="List other topics here"
+							></textarea>
+						</fieldset>
+						<button type="submit" class="btn">Sign Up</button>
+					</div>
 				</div>
-				<button type="submit" class="btn">Sign Up</button>
 			</form>
 		</main>
 
